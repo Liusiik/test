@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+	<title>Генератор компліментів</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+		body{
+			color: palevioletred;
+			background-color: lavender;
+			font-size: 24px;
+			font-family: "Sofia", sans-serif;
+		}
+	</style>
+</head>
+<body>
+<script type="text/javascript">
+
+let compliments= ["smart", "genius", "kind", "gorgeous", "inspiring", "cute", "friendly", "happy", "beautiful", "blessed", "cozy", "brave", "lovely", "fancy", "wonderful", "intellegent", "generous", "skillful", "polit", "sociable", "able", "acute"];
+let animals=["puppy", "kitten", "fox", "rat", "sheep", "lamb", "horse", "rabbit", "wolf", "seal", "lion", "elk", "raccoon", "panda", "kangaroo", "spider","snake", "owl", "swan", "parrot", "flamingos", "mouse"];
+let number=prompt("Inner beauty is very important! How many complimets do you want?",100)
+for (let i= 1; i <=number; i++) {
+let rand=Math.floor(Math.random()*compliments.length);	
+let rand1=Math.floor(Math.random()*animals.length);	
+document.write(i+") You are so " +compliments[rand]+" as "+animals[rand]+"<br>")
+}
+
+</script>
+</body>
+</html>
